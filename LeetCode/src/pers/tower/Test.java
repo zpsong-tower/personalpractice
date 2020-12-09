@@ -7,17 +7,13 @@ import pers.tower.questions.*;
  * @since 2020/11/6 3:01
  */
 public class Test {
-	public static void main(String[] stra) {
-		Question9 test = new Question9();
-		System.out.println(test.isPalindrome(49694)); // false
-		System.out.println(test.isPalindrome(0)); // true
-		System.out.println(test.isPalindrome(4)); // true
-		System.out.println(test.isPalindrome(2332)); // true
-		System.out.println(test.isPalindrome(92366329)); // true
-		System.out.println(test.isPalindrome(10000000)); // false
-		System.out.println(test.isPalindrome(1231)); // false
-		System.out.println(test.isPalindrome(12312)); // false
-		System.out.println(test.isPalindrome(-12321)); // false
-		System.out.println(test.isPalindrome(-1)); // false
+	public static void main(String[] str) {
+		Question1550 q = new Question1550();
+		int[] arr1 = {2, 6, 4, 1};
+		int[] arr2 = {1, 2, 34, 3, 4, 5, 7, 23, 12};
+		boolean a1 = q.threeConsecutiveOdds(arr1);
+		boolean a2 = q.threeConsecutiveOdds(arr2);
+		System.out.println(a1); // false
+		System.out.println(a2); // true
 	}
 }
