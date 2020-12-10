@@ -1,15 +1,15 @@
 package pers.tower.questions;
 
 /**
+ * 1550. 存在连续三个奇数的数组
+ * 给你一个整数数组 arr，请你判断数组中是否存在连续三个元素都是奇数的情况：如果存在，请返回 true ；否则，返回 false 。
+ *
+ * 思路：三个数一组，只进行少量判断便可跳过多组数据，未跳过则保留上一组计算过的有效数据，尽量减少求余计算
+ *
  * @author zpsong-tower <pingzisong2012@gmail.com>
  * @since 2020/12/10 4:40
  */
 public class Question1550 {
-
-	/**
-	 * 给你一个整数数组 arr，请你判断数组中是否存在连续三个元素都是奇数的情况：如果存在，请返回 true ；否则，返回 false 。
-	 */
-
 	public boolean threeConsecutiveOdds(int[] arr) {
 		boolean lastSign = true;
 		boolean lastSignState = false;
