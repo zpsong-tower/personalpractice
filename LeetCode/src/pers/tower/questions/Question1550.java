@@ -6,9 +6,9 @@ package pers.tower.questions;
  */
 public class Question1550 {
 
-	// 给你一个整数数组 arr，请你判断数组中是否存在连续三个元素都是奇数的情况：如果存在，请返回 true ；否则，返回 false 。
-	// 执行用时：0 ms, 在所有 Java 提交中击败了 100% 的用户
-	// 内存消耗：38 MB, 在所有 Java 提交中击败了 86.71% 的用户
+	/**
+	 * 给你一个整数数组 arr，请你判断数组中是否存在连续三个元素都是奇数的情况：如果存在，请返回 true ；否则，返回 false 。
+	 */
 
 	public boolean threeConsecutiveOdds(int[] arr) {
 		boolean lastSign = true;
