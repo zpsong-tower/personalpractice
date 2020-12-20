@@ -10,14 +10,12 @@ import pers.tower.questions.*;
  */
 public class Test {
 	public static void main(String[] str) {
-		Question11_1 q = new Question11_1();
-		int[] arr0 = {1, 8, 6, 2, 5, 4, 8, 3, 7};
-		int[] arr1 = {1, 1};
-		int[] arr2 = {4, 3, 2, 1, 4};
-		int[] arr3 = {1, 2, 1};
-		System.out.println(q.maxArea(arr0)); // 49
-		System.out.println(q.maxArea(arr1)); // 1
-		System.out.println(q.maxArea(arr2)); // 16
-		System.out.println(q.maxArea(arr3)); // 2
+		Question242 q = new Question242();
+		String s = "anagram";
+		String t = "nagaram";
+		System.out.println(q.isAnagram(s, t)); // true
+		s = "rat";
+		t = "car";
+		System.out.println(q.isAnagram(s, t)); // false
 	}
 }
