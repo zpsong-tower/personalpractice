@@ -10,10 +10,8 @@ import pers.tower.questions.*;
  */
 public class Test {
 	public static void main(String[] str) {
-		Question746 q = new Question746();
-		int[] cost1 = {10, 15, 20};
-		int[] cost2 = {1, 100, 1, 1, 1, 100, 1, 1, 100, 1};
-		System.out.println(q.minCostClimbingStairs(cost1)); // 15
-		System.out.println(q.minCostClimbingStairs(cost2)); // 6
+		Question387 q = new Question387();
+		System.out.println(q.firstUniqChar("leetcode")); // 0
+		System.out.println(q.firstUniqChar("loveleetcode")); // 2
 	}
 }
