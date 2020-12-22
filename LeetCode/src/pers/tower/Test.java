@@ -10,12 +10,10 @@ import pers.tower.questions.*;
  */
 public class Test {
 	public static void main(String[] str) {
-		Question242 q = new Question242();
-		String s = "anagram";
-		String t = "nagaram";
-		System.out.println(q.isAnagram(s, t)); // true
-		s = "rat";
-		t = "car";
-		System.out.println(q.isAnagram(s, t)); // false
+		Question746 q = new Question746();
+		int[] cost1 = {10, 15, 20};
+		int[] cost2 = {1, 100, 1, 1, 1, 100, 1, 1, 100, 1};
+		System.out.println(q.minCostClimbingStairs(cost1)); // 15
+		System.out.println(q.minCostClimbingStairs(cost2)); // 6
 	}
 }
