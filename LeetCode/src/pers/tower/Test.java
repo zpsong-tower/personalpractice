@@ -10,8 +10,5 @@ import pers.tower.questions.*;
  */
 public class Test {
 	public static void main(String[] str) {
-		Question387 q = new Question387();
-		System.out.println(q.firstUniqChar("leetcode")); // 0
-		System.out.println(q.firstUniqChar("loveleetcode")); // 2
 	}
 }
