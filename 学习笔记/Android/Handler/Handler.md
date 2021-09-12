@@ -118,7 +118,7 @@ public void dispatchMessage(@NonNull Message msg) {
             }
         }
         
-        // 调用Handler子类实现的hanlerMessage方法进行处理
+        // 调用Handler子类实现的handleMessage方法进行处理
         handleMessage(msg);
     }
 }
@@ -131,8 +131,8 @@ public void handleMessage(@NonNull Message msg) {
 }
 ```
 
-如果 Message 的 Callback 不为 null，一般为通过 post(Runnabl) 方式，会直接执行 Runnable 的 run 方法。因此这里的 Runnable 实际上就是一个回调接口，跟线程 Thread 没有任何关系。
-如果 Message 的 Callback 为 null，这种一般为 sendMessage 的方式，则会调用 Handler 的 hanlerMessage 方法进行处理。
+如果 Message 的 Callback 不为 null，一般为通过 post(Runnable) 方式，会直接执行 Runnable 的 run 方法。因此这里的 Runnable 实际上就是一个回调接口，跟线程 Thread 没有任何关系。
+如果 Message 的 Callback 为 null，这种一般为 sendMessage 的方式，则会调用 Handler 的 handleMessage 方法进行处理。
 
 ### Handler的sendMessage方法
 
